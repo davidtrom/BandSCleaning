@@ -27,19 +27,13 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item" ngbDropdown>
                         <a class="nav-link" a [routerLink]="['/']" routerLinkActive="router-link-active" style="color:black" role="button" (click)="collapse()">
-                        Home  
+                            Home  
                         </a>
                     </li>
 
                     <li class="nav-item" ngbDropdown>
-                        <a class="nav-link" a [routerLink]="['/specialties']" routerLinkActive="router-link-active" style="color:black"  role="button" (click)="collapse()">
-                            Specializations 
-                        </a>
-                    </li>
-
-                    <li class="nav-item" ngbDropdown>
-                        <a class="nav-link" a [routerLink]="['/process']" routerLinkActive="router-link-active" style="color:black"  role="button" (click)="collapse()">
-                        Process  
+                        <a class="nav-link" a [routerLink]="['/about']" routerLinkActive="router-link-active" style="color:black"  role="button" (click)="collapse()">
+                            About  
                         </a>
                     </li>
 
@@ -55,21 +49,14 @@
                         </a> 
                     </li>
 
-                    <!-- <li class="nav-item" ngbDropdown>
-                        <a class="nav-link" a [routerLink]="['/info']" routerLinkActive="router-link-active" style="color:black"  role="button" (click)="collapse()">
-                            Information 
-                        </a>
-                    </li> -->
-
                     <li class="nav-item dropdown" ngbDropdown id="infoDropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" style="color: black" aria-haspopup="true" aria-expanded="false">Information</a>
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" style="color: black" aria-haspopup="true" aria-expanded="false">Residential</a>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" a [routerLink]="['/info']" (click)="collapse()">Blog</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" a [routerLink]="['/covid-19']"(click)="collapse()">Telehealth</a>
-                          <!-- <a class="dropdown-item" href="#">Something else here</a>
-                          
-                          <a class="dropdown-item" href="#">Separated link</a> -->
+                            <a class="dropdown-item" a [routerLink]="['/mold-removal']" (click)="collapse()">Mold Removal</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" a [routerLink]="['/covid-19']"(click)="collapse()">Deep Clean</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" a [routerLink]="['/power-washing']"(click)="collapse()">Deep Clean</a>
                         </div>
                     </li>
 
@@ -94,10 +81,7 @@
             </div>
         </div>
 
-        <div *ngIf="showDesignBlock$; else regBlock" id="design-block"></div>
-        <ng-template #regBlock>
-            <div id="regBlock"></div>
-        </ng-template>
+        <div id="design-block"></div>
     </div>
 </header>
 
