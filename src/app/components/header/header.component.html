@@ -1,1 +1,99 @@
-<p>header works!</p>
+
+<header>
+    <div class="flex-container">
+        <nav class="navbar navbar-expand-md navbar-light">
+            
+            <span class="navbar-brand">
+                <a [routerLink]="['/']">
+                    <img src="../../../assets/logoShinyHouse.JPG" id="logo">
+                </a>
+            </span>
+                
+            <a [routerLink]="['/']" style="text-decoration: none;">
+                <div class="title">
+                    B & S Cleaning Services 
+                    <p id="title-description">
+                        Residential and Commercial
+                    </p>
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" aria-controls="navbarContent" [attr.aria-expanded]="collapsed"
+                aria-label="Toggle navigation" (click)="collapse()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse" [class.collapse]="collapsed" id="navbarContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item" ngbDropdown>
+                        <a class="nav-link" a [routerLink]="['/']" routerLinkActive="router-link-active" style="color:black" role="button" (click)="collapse()">
+                            Home  
+                        </a>
+                    </li>
+
+                    <li class="nav-item" ngbDropdown>
+                        <a class="nav-link" a [routerLink]="['/about']" routerLinkActive="router-link-active" style="color:black"  role="button" (click)="collapse()">
+                            About  
+                        </a>
+                    </li>
+
+                    <li class="nav-item" ngbDropdown>
+                        <a class="nav-link" a [routerLink]="['/insurance']" routerLinkActive="router-link-active" style="color:black"  role="button" (click)="collapse()">
+                            Insurance  
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item" ngbDropdown>
+                        <a class="nav-link" a [routerLink]="['/location']" routerLinkActive="router-link-active"  style="color:black" role="button" (click)="collapse()">
+                            Location  
+                        </a> 
+                    </li>
+
+                    <li class="nav-item dropdown" ngbDropdown id="infoDropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" style="color: black" aria-haspopup="true" aria-expanded="false">Residential</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" a [routerLink]="['/mold-removal']" (click)="collapse()">Mold Removal</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" a [routerLink]="['/deep-cleaning']"(click)="collapse()">Deep Clean</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" a [routerLink]="['/power-washing']"(click)="collapse()">Power Washing</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown" ngbDropdown id="infoDropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" style="color: black" aria-haspopup="true" aria-expanded="false">Commercial</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" a [routerLink]="['/mold-removal']" (click)="collapse()">Mold Removal</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" a [routerLink]="['/covid-19']"(click)="collapse()">Deep Clean</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" a [routerLink]="['/power-washing']"(click)="collapse()">Deep Clean</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item" ngbDropdown placement="bottom-right">
+                        <a class="nav-link" a [routerLink]="['/contact']" routerLinkActive="router-link-active" style="color:black"  role="button" (click)="collapse()">
+                            Contact  
+                        </a> 
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="covidInfo">
+            <div class="row ">
+                <div class="col-md-12">
+                    ** For COVID-19 Information Updates
+                    <a type="button" class="btn btn-danger btn-sm" [routerLink]="['/covid-19']">
+                    Click Here
+                    </a>
+                    **
+                </div>
+            </div>
+        </div>
+
+        <div id="design-block"></div>
+    </div>
+</header>
+
+

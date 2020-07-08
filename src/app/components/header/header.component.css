@@ -1,0 +1,58 @@
+#logo{
+    max-width: 30vw;
+    height: auto;
+    /* width: auto; */
+    /* max-width: 100%; */
+}
+
+header{
+    /* background-color: #40504f; */
+    /* background-color: #dad5f3; */
+    background-color: #e5e2f1;
+}
+
+.title{
+    /* color: white; */
+    color: black;
+    font-size: 21pt;
+    /* font-size: 75%; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#title-description{
+    /* color: white; */
+   font-size: 51%;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+li{
+    font-size: 15pt;
+}
+
+#design-block {
+    /* background-image: linear-gradient(rgb(131, 97, 224), white); */
+    background-image: linear-gradient( #e5e2f1, white);
+    max-width: 100%;
+    height: 4vh;
+}
+
+#regBlock{
+    background-color: #e5e2f1;
+    max-width: 100%;
+    height: 3vh;
+}
+
+#covidInfo{
+    text-align: center;
+    font-weight: bold;
+}
+
+.navbar .dropdown-menu {
+    background-color: #e5e2f1;
+  }
+  
+  /* and this styles the dropdwon trigger link, when open */
+  .navbar .dropdown.show a { 
+    background-color: #e5e2f1;
+  }
