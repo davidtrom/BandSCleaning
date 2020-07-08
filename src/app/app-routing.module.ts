@@ -11,13 +11,13 @@ import { DeepCleaningComponent } from './components/deep-cleaning/deep-cleaning.
 
 const routes: Routes = [
   { path: '', component: DashboardComponent},
-  { path: '/about', component: AboutComponent},
-  { path: '/contact', component: ContactComponent},
-  { path: '/power-washing', component: PowerWashingComponent},
-  { path: '/floors', component: FloorsComponent},
-  { path: '/mold-removal', component: MoldRemovalComponent},
-  { path: '/covid-19', component: Covid19Component},
-  { path: '/deep-cleaning', component: DeepCleaningComponent},
+  { path: 'about', component: AboutComponent},
+  { path: 'contact', component: ContactComponent},
+  { path: 'power-washing', component: PowerWashingComponent},
+  { path: 'floors', component: FloorsComponent},
+  { path: 'mold-removal', component: MoldRemovalComponent},
+  { path: 'covid-19', component: Covid19Component},
+  { path: 'deep-cleaning', component: DeepCleaningComponent},
 
 
   // if no route, redirect to home

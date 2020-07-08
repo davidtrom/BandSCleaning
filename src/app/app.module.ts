@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +15,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { MoldRemovalComponent } from './components/mold-removal/mold-removal.component';
 import { PowerWashingComponent } from './components/power-washing/power-washing.component';
 import { FloorsComponent } from './components/floors/floors.component';
+import { DeepCleaningComponent } from './components/deep-cleaning/deep-cleaning.component';
+
 
 
 @NgModule({
@@ -27,7 +30,8 @@ import { FloorsComponent } from './components/floors/floors.component';
     ContactComponent,
     MoldRemovalComponent,
     PowerWashingComponent,
-    FloorsComponent
+    FloorsComponent,
+    DeepCleaningComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +39,7 @@ import { FloorsComponent } from './components/floors/floors.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
