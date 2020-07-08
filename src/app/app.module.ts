@@ -13,6 +13,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { MoldRemovalComponent } from './components/mold-removal/mold-removal.component';
 import { PowerWashingComponent } from './components/power-washing/power-washing.component';
+import { FloorsComponent } from './components/floors/floors.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { PowerWashingComponent } from './components/power-washing/power-washing.
     AboutComponent,
     ContactComponent,
     MoldRemovalComponent,
-    PowerWashingComponent
+    PowerWashingComponent,
+    FloorsComponent
   ],
   imports: [
     BrowserModule,
