@@ -1,0 +1,16 @@
+.flex-container{
+    font: 13pt;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.aboutText{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.title{
+    color:  rgb(9, 61, 37);
+    text-align: center;
+    padding-bottom: 2%;
+}
