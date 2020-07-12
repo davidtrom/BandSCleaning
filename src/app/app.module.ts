@@ -16,6 +16,7 @@ import { MoldRemovalComponent } from './components/mold-removal/mold-removal.com
 import { PowerWashingComponent } from './components/power-washing/power-washing.component';
 import { FloorsComponent } from './components/floors/floors.component';
 import { DeepCleaningComponent } from './components/deep-cleaning/deep-cleaning.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 
 
@@ -31,7 +32,8 @@ import { DeepCleaningComponent } from './components/deep-cleaning/deep-cleaning.
     MoldRemovalComponent,
     PowerWashingComponent,
     FloorsComponent,
-    DeepCleaningComponent
+    DeepCleaningComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
