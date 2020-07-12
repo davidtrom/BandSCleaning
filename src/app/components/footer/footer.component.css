@@ -1,9 +1,8 @@
 #footer {
     padding-top: 0;
-    /* position: absolute; */
-    bottom: 0;
-    width: 100%;
-    height: 16rem;
+    margin-top: auto;
+    position: relative;
+    max-width: 100%;
     background-color:#d6a92e;
 }
 
@@ -28,12 +27,9 @@ img{
     font-size: 12px;
     padding-top: 1rem;
 }
-#dtvWebsite{
-    text-decoration: none;
-    color: white;
-}
 
-#dtvWebsite:after{
-    text-decoration: none;
+.footerContact{
+    font-size: 13pt;
+    color: rgb(9, 61, 37);
+    padding-bottom: 2%;
 }
-/* © 2020 GitHub, Inc. */

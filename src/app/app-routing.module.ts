@@ -8,6 +8,7 @@ import { FloorsComponent } from './components/floors/floors.component';
 import { MoldRemovalComponent } from './components/mold-removal/mold-removal.component';
 import { Covid19Component } from './components/covid19/covid19.component';
 import { DeepCleaningComponent } from './components/deep-cleaning/deep-cleaning.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 const routes: Routes = [
   { path: '', component: DashboardComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'mold-removal', component: MoldRemovalComponent},
   { path: 'covid-19', component: Covid19Component},
   { path: 'deep-cleaning', component: DeepCleaningComponent},
+  { path: 'gallery', component: GalleryComponent},
 
 
   // if no route, redirect to home
