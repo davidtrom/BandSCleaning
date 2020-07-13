@@ -8,3 +8,17 @@
     text-align: center;
     color: rgb(9, 61, 37);
 }
+
+.description{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+}
+
+#resList, #comList{
+    padding-top: 1%;
+    display: table;
+    margin: auto;
+}
+
+
