@@ -13,7 +13,7 @@
 .description{
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
 }
 
 #resList, #comList{
@@ -21,8 +21,11 @@
     display: table;
     margin: auto;
 }
+.row1{
+    text-align: center;
+}
 
-.picture{
+/* .picture{
     text-align: center; 
     position: relative;
     padding-bottom: 56.25%;
@@ -38,6 +41,37 @@
     left: 0;
     max-width: 100%;
     max-height: 100%;
-}
+} */
+
+img {
+    /* height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+  }
+
+[style*="--aspect-ratio"] > :first-child {
+    max-width: 100%;
+  }
+  [style*="--aspect-ratio"] > img {  
+    height: auto;
+  } 
+  @supports (--custom:property) {
+    [style*="--aspect-ratio"] {
+      position: relative;
+    }
+    [style*="--aspect-ratio"]::before {
+      content: "";
+      display: block;
+      padding-bottom: calc(65% / (var(--aspect-ratio)));
+    }  
+    [style*="--aspect-ratio"] > :first-child {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }  
+  }
 
 
