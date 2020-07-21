@@ -17,6 +17,7 @@ import { PowerWashingComponent } from './components/power-washing/power-washing.
 import { FloorsComponent } from './components/floors/floors.component';
 import { DeepCleaningComponent } from './components/deep-cleaning/deep-cleaning.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { ReviewsComponent } from './components/reviews/reviews.component';
 
 
 
@@ -33,7 +34,8 @@ import { GalleryComponent } from './components/gallery/gallery.component';
     PowerWashingComponent,
     FloorsComponent,
     DeepCleaningComponent,
-    GalleryComponent
+    GalleryComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserModule,

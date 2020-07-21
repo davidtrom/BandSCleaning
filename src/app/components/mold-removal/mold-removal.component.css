@@ -25,3 +25,8 @@
     max-width: 100%;
     height: auto;
 }
+
+.bottomPicture{
+    text-align: center;
+    padding-bottom: 2%;
+}
