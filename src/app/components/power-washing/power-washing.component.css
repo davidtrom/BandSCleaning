@@ -27,8 +27,14 @@
     text-align: center;
 }
 
-.beforePicture, .afterPicture{
-    text-align: center;
+.beforePicture{
+    text-align: right;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.afterPicture{
+    text-align: left;
     padding-left: 3%;
     padding-right: 3%;
 }
